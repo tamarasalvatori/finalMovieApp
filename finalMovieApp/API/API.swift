@@ -30,7 +30,7 @@ class API {
         }
     }
 
-    class func fetchMoviesId(_ id: String, onSuccess: @escaping (DetailsResults) -> Void) {
+    class func fetchMoviesId(_ id: String, onSuccess: @escaping (MovieDetails) -> Void) {
         coder.keyDecodingStrategy = .convertFromSnakeCase
         let urlStr = "\(baseUrl)\(id)?api_key=\(apikey)"
         guard let url = URL(string: urlStr) else { fatalError("Unable to get url") }
@@ -39,7 +39,8 @@ class API {
             switch response.result {
             case .success(let data):
                 guard let data = data else { fatalError("Unable to parse data from API") }
-                guard let resultsDetails = try? coder.decode(DetailsResults.self, from: data) else { fatalError("Unable to parse data in json") }
+                guard let resultsDetails =
+                        try? coder.decode(MovieDetails.self, from: data) else { fatalError("Unable to parse data in json") }
                 DispatchQueue.main.async {
                     onSuccess(resultsDetails)
                 }
@@ -48,5 +49,4 @@ class API {
             }
         }
     }
-
 }

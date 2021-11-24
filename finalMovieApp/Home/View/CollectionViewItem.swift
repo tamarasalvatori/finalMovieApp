@@ -2,7 +2,9 @@
 import UIKit
 import Kingfisher
 
-class HomeViewModel: UICollectionViewCell {
+//var movieId = ""
+
+class CollectionViewItem: UICollectionViewCell {
 
     @IBOutlet weak var movieImage: UIImageView!
 
@@ -10,6 +12,7 @@ class HomeViewModel: UICollectionViewCell {
         didSet {
             if let movie = movie {
                 movieImage.kf.setImage(with: "\(movie.posterPath ?? "")".url)
+                //movieId = (movie.id)?.description ?? "550"
             }
         }
     }

@@ -7,158 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "32246CF1-0EE3-42FA-BE86-A3E3B40BAEC0"
-            shouldBeEnabled = "Yes"
+            uuid = "BB34C564-F457-4A2C-A0D2-7B70E62A2178"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "finalMovieApp/Controller/PopularMoviesVC.swift"
+            filePath = "finalMovieApp/Home/Controller/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "loadMoreData()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "932CEB19-72F9-4BEF-8164-7DB609D40168"
-            shouldBeEnabled = "Yes"
+            uuid = "7B189934-471F-48EA-B46A-4241AE95D59A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "finalMovieApp/Controller/PopularMoviesVC.swift"
+            filePath = "finalMovieApp/Home/Controller/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "collectionView(_:willDisplay:forItemAt:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "35A52410-CA9A-461E-B590-6CC95BCF53D9"
-            shouldBeEnabled = "Yes"
+            uuid = "66C13EDF-DE03-4EE9-8975-9C398F43F331"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "finalMovieApp/Details/View/DetailsViewModel.swift"
+            filePath = "finalMovieApp/API/API.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "details"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B2873B62-E959-4445-8135-354C126FC0F3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "finalMovieApp/Details/View/DetailsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "details"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C42E3BEF-FBF2-43F9-B6FD-821C823745EF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "finalMovieApp/Details/View/DetailsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "details"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C42E3BEF-FBF2-43F9-B6FD-821C823745EF - 669addbd9e75ad9f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "finalMovieApp.DetailsViewModel.details.getter : Swift.Optional&lt;finalMovieApp.MovieDetails&gt;"
-                  moduleName = "finalMovieApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/latamarasalvatori/Documents/Personal/Especializac%CC%A7a%CC%83o/iOS%20Classes/finalMovieApp/finalMovieApp/Details/View/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "295">
-               </Location>
-               <Location
-                  uuid = "C42E3BEF-FBF2-43F9-B6FD-821C823745EF - bcd1e574a7e7058b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "finalMovieApp.DetailsViewModel.details.setter : Swift.Optional&lt;finalMovieApp.MovieDetails&gt;"
-                  moduleName = "finalMovieApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/latamarasalvatori/Documents/Personal/Especializac%CC%A7a%CC%83o/iOS%20Classes/finalMovieApp/finalMovieApp/Details/View/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "424">
-               </Location>
-               <Location
-                  uuid = "C42E3BEF-FBF2-43F9-B6FD-821C823745EF - 9357446a0846244f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "finalMovieApp.DetailsViewModel.details.modify : Swift.Optional&lt;finalMovieApp.MovieDetails&gt;"
-                  moduleName = "finalMovieApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/latamarasalvatori/Documents/Personal/Especializac%CC%A7a%CC%83o/iOS%20Classes/finalMovieApp/finalMovieApp/Details/View/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "22">
-               </Location>
-               <Location
-                  uuid = "C42E3BEF-FBF2-43F9-B6FD-821C823745EF - 7ca6ad11b278b335"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "finalMovieApp.DetailsViewModel.details.modify : Swift.Optional&lt;finalMovieApp.MovieDetails&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "finalMovieApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/latamarasalvatori/Documents/Personal/Especializac%CC%A7a%CC%83o/iOS%20Classes/finalMovieApp/finalMovieApp/Details/View/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "10">
-               </Location>
-               <Location
-                  uuid = "C42E3BEF-FBF2-43F9-B6FD-821C823745EF - 84f193bc2713f902"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "finalMovieApp.DetailsViewModel.init() -&gt; finalMovieApp.DetailsViewModel"
-                  moduleName = "finalMovieApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/latamarasalvatori/Documents/Personal/Especializac%CC%A7a%CC%83o/iOS%20Classes/finalMovieApp/finalMovieApp/Details/View/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "615">
-               </Location>
-            </Locations>
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchMoviesId(_:onSuccess:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
