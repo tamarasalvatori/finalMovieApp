@@ -30,7 +30,7 @@ class API {
         }
     }
 
-    class func fetchMoviesId(_ id: Int?, onSuccess: @escaping (MovieDetails) -> Void) {
+    class func fetchMoviesId(_ id: Int, onSuccess: @escaping (MovieDetails) -> Void) {
         coder.keyDecodingStrategy = .convertFromSnakeCase
         let urlStr = "\(baseUrl)\(String(describing: id))?api_key=\(apikey)"
         guard let url = URL(string: urlStr) else { fatalError("Unable to get url") }

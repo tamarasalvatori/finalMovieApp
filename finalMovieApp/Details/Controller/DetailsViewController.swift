@@ -10,17 +10,16 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var movieReview: UILabel!
     @IBOutlet weak var movieResume: UILabel!
 
-    private var id: Int = 0
     var movie: Movie?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fechId(id)
+        fechId((movie?.id)!)
     }
 
     func fechId(_ id: Int) {
-        API.fetchMoviesId(movie?.id) { data in
+        API.fetchMoviesId((movie?.id)!) { data in
             self.details = data
         }
     }
