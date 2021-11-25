@@ -10,16 +10,17 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var movieReview: UILabel!
     @IBOutlet weak var movieResume: UILabel!
 
-    private var id: String = ""
+    private var id: Int = 0
+    var movie: Movie?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fechId()
+        fechId(id)
     }
 
-    func fechId(_ id: String = "65") {
-        API.fetchMoviesId(id) { data in
+    func fechId(_ id: Int) {
+        API.fetchMoviesId(movie?.id) { data in
             self.details = data
         }
     }
@@ -27,11 +28,11 @@ class DetailsViewController: UIViewController {
     var details: MovieDetails? {
         didSet {
             if let details = details {
-                movieTitle.text = details.original_title
-                moviePoster.kf.setImage(with: "\(details.poster_path ?? "")".urlDetails)
+                movieTitle.text = details.title
+                moviePoster.kf.setImage(with: "\(details.posterPath ?? "")".urlDetails)
                 movieResume.text = details.overview
-                releaseDate.text = details.release_date
-                movieReview.text = (details.vote_average)?.description
+                releaseDate.text = details.releaseDate
+                movieReview.text = (details.voteAverage)?.description
             }
         }
     }

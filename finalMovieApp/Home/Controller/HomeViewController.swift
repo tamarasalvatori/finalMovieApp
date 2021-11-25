@@ -9,6 +9,7 @@ class HomeViewController: UIViewController {
     private var movies: [Movie]?
     private var page: Int = 1
     private var totalPages: Int = 0
+    var movieSelected : Movie?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class HomeViewController: UIViewController {
         layout.itemSize = CGSize(width: width, height: 280 )
 
         fetch()
+        
         }
 
     private func fetch(_ page: Int = 1) {
@@ -61,11 +63,16 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-        print("\(indexPath.item)")
+        let item = self.movies?[indexPath.item]
+        movieSelected = item
+        self.performSegue(withIdentifier: "showDetails", sender: self)
+        //print("\(indexPath.item)")
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(segue.identifier)
+        if segue.identifier == "showDetails" {
+            let vc = segue.destination as? DetailsViewController
+            vc?.movie = movieSelected
+        }
     }
 }

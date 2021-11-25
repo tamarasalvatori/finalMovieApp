@@ -47,7 +47,6 @@
                                         <size key="customSize" width="100" height="100"/>
                                         <connections>
                                             <outlet property="movieImage" destination="3AZ-Mc-8Dg" id="oZM-mg-3bt"/>
-                                            <segue destination="yd2-0r-spK" kind="show" identifier="showDetails" id="KLd-Ia-qah"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -72,6 +71,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="6Uu-22-eij" id="gq1-a8-Q2l"/>
+                        <segue destination="yd2-0r-spK" kind="show" identifier="showDetails" id="z8b-sG-s0R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
