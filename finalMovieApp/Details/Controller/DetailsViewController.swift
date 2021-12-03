@@ -8,7 +8,8 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var moviePoster: UIImageView!
     @IBOutlet weak var releaseDate: UILabel!
     @IBOutlet weak var movieReview: UILabel!
-    @IBOutlet weak var movieResume: UILabel!
+    //@IBOutlet weak var movieResume: UILabel!
+    @IBOutlet weak var movieResume: UITextView!
 
     var movie: Movie?
 
